@@ -1,0 +1,19 @@
+<!-- NOTIFICATION -->
+<%= render partial: "wallets/notification" %>
+<section class="mx-auto max-w-5xl px-8">
+  <!-- CONTAINER -->
+  <div class="flex items-start">
+    <!-- LEFT SIDE-->
+    <div class="w-1/2">
+      <!-- Profile-->
+      <%= render partial: "wallets/profile" %>
+      <!-- Transaction-->
+      <%= render partial: "wallets/transactions" %>
+    </div>
+    <!-- RIGHT SIDE-->
+    <div class="w-1/2 h-screen sticky top-0 z-50 pl-2 grid justify-items-end">
+      <!-- Form-->
+      <%= render partial: "wallets/form" %>
+    </div>
+  </div>
+</section>

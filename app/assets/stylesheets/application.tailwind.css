@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .marijuana-choice {
+    @apply block h-10 w-10 bg-white border border-green-300 cursor-pointer select-none rounded-full p-2 text-center peer-checked:bg-green-500 peer-checked:font-bold peer-checked:text-white;
+  }
+
+  .tag {
+    @apply bg-gray-100 h-5 p-1 rounded cursor-pointer;
+  }
+
+  .btn {
+    @apply w-full mt-5 rounded-md py-3 hover:scale-105 duration-300;
+  }
+
+  .btn-withdraw {
+    @apply bg-black text-white font-normal;
+  }
+
+  .btn-support {
+    @apply bg-green-600 text-white font-semibold;
+  }
+}

@@ -1,0 +1,41 @@
+<div class="w-full max-w-sm" x-data="{price: 0.001}">
+  <div class="box-border border border-gray-200 shadow-md rounded px-8 py-6">
+    <h1 class="font-semibold text-lg mb-4">
+      Buy <span class="text-green-500">Stash tha Mula's</span> work
+    </h1>
+    <!-- Button: Connect to MetaMask-->
+    <button data-metamask-target="connect" data-action="metamask#connectMetamask"hidden class="mt-5 w-full rounded-md py-3 bg-black text-white font-semibold hover:scale-105 duration-300">
+      <div class="flex items-center justify-center">
+        Connect to <%= image_tag "metamask.png", class: "ml-2 h-6 w-6"%>
+      </div>
+    </button>
+    <!-- Form: BuymeSomeWork-->
+    <div hidden data-metamask-target="form">
+      <!-- Tabs: Marijuana-->
+      <div class="w-full flex items-center justify-evenly space-x-2 rounded-md border border-green-200 bg-green-500/10 px-2 py-5 mb-5">
+        <span class="text-4xl">🍁</span>
+        <span class="text-gray-400 font semifold">X</span>
+        <div>
+          <input type="radio" name="option" id="opt1" class="peer hidden" checked />
+          <label @click="price=0.001"for="opt1" class="marijuana-choice">1</label>
+        </div>
+        <div>
+          <input type="radio" name="option" id="opt2" class="peer hidden" />
+          <label @click="price=0.003" for="opt2" class="marijuana-choice">3</label>
+        </div>
+        <div>
+          <input type="radio" name="option" id="opt3" class="peer hidden" />
+          <label @click="price=0.005"for="opt3" class="marijuana-choice">5</label>
+        </div>
+      </div>
+      <!-- Input: Name-->
+      <input data-metamask-target="name" type="text" class="mb-4 rounded-md w-full p-3 bg-gray-100 border-none focus:bg-white" placeholder="Name (optional)"/>
+      <!-- Input: Message-->
+      <textarea data-metamask-target="message" rows="3" class="mb-4 mt-1 w-full p-3 rounded-md bg-gray-100 border-none resize-none focus:bg-white" placeholder="Say something nice...(optional)"></textarea>
+      <!-- Button: Support-->
+      <button data-action="metamask#buyMarijuana"class="btn btn-support">
+        Support <span data-metamask-target="price" x-text="price"></span> ETH
+      </button>
+    </div>
+  </div>
+</div>

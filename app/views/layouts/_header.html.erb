@@ -1,0 +1,20 @@
+<header class="left-0 top-0 z-50 bg-bwhite/90 w-full shadow-md">
+  <div class="mx-auto h-[60px] max-w-7xl">
+    <div class="flex items-center justify-between h-full border-b bordfer-dtate-500/10 px-5">
+      <!-- Logo-->
+      <div class="flex items-center">
+        <%= image_tag "marijuana.png", class:"w-[2rem]" %>
+        <span class="ml-2 text-xl font-semibold">GiveMeSomeWork</span>
+      </div>
+      <!-- Wallet -->
+      <div hidden data-metamask-target="wallet">
+        <div class="flex items-center">
+          <%= image_tag "ethereum.png", class: "mr-1 h-5 w-5"%>
+          <p data-metamask-target="balance" class="mr-5 text-md font-semibold"></p>
+          <%= image_tag "metamask.png", class: "mr-1 h-5 w-5"%>
+          <p data-metamask-target="address" class="mr-5 text-md font-semibold"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

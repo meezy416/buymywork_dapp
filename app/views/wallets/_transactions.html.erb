@@ -1,0 +1,35 @@
+<div class="mt-10" hidden data-metamask-target="results">
+</div>
+<template data-metamask-target="transactionTemplate">
+  <!-- Txn #1 -->
+  <div class="w-full border border-gray/20 rounderd-lg mt-5">
+    <div class="px-5pb-5 pt-3">
+      <div class="flex items-center">
+        <!-- Image -->
+        <div class="rounded-full bg-orange-400 h-10 w-10 p-1 mr-3">
+          <%= image_tag "marijuana.png"%>
+        </div>
+        <!-- Details -->
+        <div>
+          <p class="text-sm">
+            <span class="supporter font-semibold">Leroy Ainsworth</span>
+            <span class="price text-slate-500">supported 0.001 ETH</span>
+          </p>
+          <div class="flex mt-1 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-slate-500"fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a2.25 2.25 0 00-2.25-2.25H15a3 3 0 11-6 0H5.25A2.25 2.25 0 003 12m18 0v6a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 9m18 0V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v3" />
+            </svg>
+            <span class="address ml-1 text-xs text-slate-400">0X69HI...7A7</span>
+          </div>
+        </div>
+      </div>
+      <!-- Message-->
+      <p class="timestamp mt-2 text-xs text-slate-400 text-right">
+        1/31/2023, 5:55:00 PM  
+      </p>
+      <div class="message mt-2 p-3 text-sm text-slate-600 border border-purple-50 bg-slate-200 rounded-md">
+        Thanks for sharing. I'm selling a ton!!! 
+      </div>
+    </div>
+  </div>
+</template>
